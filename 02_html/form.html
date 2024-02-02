@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>form tag의 종류</title>
+  </head>
+  <body>
+    <form>
+      <!-- form 택은 사용자의 입력을 받는 요소들을 묶어주는 태그 -->
+      <!-- 이 택의 특징: action, meeethod-> 서버와 통신과 관련괸 속성 -->
+      <!-- 사용자의 입력을 위한 태그를 form 태그 내부에 작성 -> 서버에 전달 -->
+      text:
+      <input type="text" id="text" />
+      <br />
+      <label for="text">text with label:</label>
+      <input type="text" name="" id="text" />
+      <br />
+      <label for="email">이메일</label>
+      <input type="email" id="email" placeholder="example@aa.co.kr" />
+      <br />
+      <label>
+        비밀번호
+        <input type="password" />
+      </label>
+      <br />
+
+      <input type="checkbox" name="agree" /> 동의합니다
+      <br />
+      <!-- automatically check -->
+      <input type="checkbox" id="agree" name="agree" checked />
+      <label for="checkbox" id="agree">동의합니다</label>
+      <br />
+
+      <!-- using disabled element -->
+      <input type="checkbox" id="agree1" disabled name="agree" />
+      <label for="checkbox" id="agree1">동의합니다</label>
+    </form>
+
+    <form action="">
+      <h5>다음중 input type이 아닌 것은? (모두 고르십시오)</h5>
+      <input type="checkbox" name="input-checkbox" id="" />
+      <label for="text" id="box">text</label>
+      <input type="checkbox" name="input-checkbox" />
+      <label for="click" id="box">click</label>
+      <input type="checkbox" name="input-checkbox" />
+      <label for="bread" id="bread">bread</label>
+      <input type="checkbox" name="input-checkbox" />
+      <label for="img" id="box">img</label>
+      <input type="checkbox" name="date" />
+      <label for="date">date</label>
+      <br />
+
+      <!-- radio names should be the same, otherwise, it can select all buttons at the same time -->
+      <!-- id name will be used for label element (for:) -->
+      <input type="radio" name="radio" id="radio1" />
+      <label for="radio1">radio type 1</label>
+      <input type="radio" name="radio" id="radio2" />
+      <label for="radio2">radio type 2</label>
+      <input type="radio" name="radio" id="radio3" />
+      <label for="radio3">radio type 3</label>
+    </form>
+
+    <br />
+    <form>
+      <h5>다음 중 img 택의 속성인 것은?</h5>
+      <input type="radio" name="title" id="radio1" />
+      <label for="radio1">title</label>
+      <input type="radio" name="title" id="radio2" />
+      <label for="radio2">alt</label>
+      <input type="radio" name="title" id="radio3" />
+      <label for="radio3">mouse</label>
+      <input type="radio" name="title" id="radio4" />
+      <label for="radio4">value</label>
+    </form>
+
+    <form action="">
+      <br />
+      <label for="color">색상을 선택해주세요.</label>
+      <input type="color" id="color" />
+
+      <br />
+      <label for="range">범위를 지정해 주세요.</label>
+      <input type="range" id="range" />
+
+      <br />
+      <label for="file">파일을 업로드해 주세요.</label>
+      <input type="file" name="file" id="file" />
+      <br />
+      <label for="number">숫자를 입력해 주세요.</label>
+      <input type="number" name="" id="number" />
+    </form>
+    <!-- date -->
+    <form>
+      <label for="date">생년얼일을 입력해 주세요.</label>
+      <input type="date" id="date" />
+
+      <br />
+      <label for="date-time">생년얼일을 입력해 주세요. (시간 포함)</label>
+      <input type="datetime-local" id="date-time" />
+    </form>
+
+    <br />
+    <input type="button" value="버튼" />
+    <!-- self-closing button -->
+    <input type="submit" value="제출 싫어요" name="" id="submit" />
+    <!-- submit automatically -->
+    <button>
+      button 택으로 만든 제출 버튼입니다
+      <div style="color: blue">난 딥이야</div>
+    </button>
+    <br />
+    <br />
+    <label for="textareeae">많은 양의 텍스트를 받을때 사용하는 textarea</label>
+    <textarea
+      id="textarea"
+      cols="55"
+      rows="10"
+      placeholder="내용을 입력해 줏세요"
+    >
+    </textarea>
+    <br />
+    <br />
+    <br />
+    <!-- opt group -->
+    <select label="fruit" id="">
+      <optgroup label="red">
+        <option value="apple">사과</option>
+        <option value="banana">바나나</option>
+        <option value="strawberry">딸기</option>
+      </optgroup>
+      <optgroup label="other">
+        <option value="orange">오랜지</option>
+        <option value="cherry">체리</option>
+        <option value="kiwi">키비</option>
+      </optgroup>
+    </select>
+    <select name="gender" id="gender">
+      <option value="male">male</option>
+      <option value="male">female</option>
+    </select>
+  </body>
+</html>

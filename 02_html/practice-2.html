@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>form tag의 종류</title>
+  </head>
+  <body>
+    <h2>제출용 품 만들기 실습</h2>
+    <form action="">
+      <h3>설문조사</h3>
+      <label for="text">이름</label>
+      <input type="text" name="" id="text" />
+      <br />
+      <label for="email">이메일</label>
+      <input type="email" name="" id="email" placeholder="love@example.com" />
+      <h3>나이</h3>
+      <br />
+      <!-- automatically check -->
+      <input type="radio" id="age" name="age" />
+      <label for="age" id="age">10대</label>
+      <input type="radio" id="age1" name="age" />
+      <label for="age1" id="age">20대</label>
+      <input type="radio" id="age2" name="age" />
+      <label for="age2" id="age">30대</label>
+      <input type="radio" id="age3" name="age" />
+      <label for="age3" id="age">40대</label>
+      <input type="radio" id="age4" name="age" />
+      <label for="age4" id="age">50대</label>
+      <input type="radio" id="age5" name="age" />
+      <label for="age5" id="age">60대 이상</label>
+      <br />
+      <h3>원하는 강의 (복수응답가능합니다.)</h3>
+      <input type="checkbox" id="lecture" />
+      <label for="lecture" id="lecture">html</label>
+      <input type="checkbox" id="lecture1" />
+      <label for="lecture1" id="lecture">css</label>
+      <input type="checkbox" id="lecture2" />
+      <label for="lecture2" id="lecture">javascript</label>
+      <br />
+      <label for="textarea"></label>
+      <textarea
+        id="textarea"
+        cols="55"
+        rows="10"
+        placeholder="하고 싶은 말을 써주세요"
+      ></textarea>
+      <input type="submit" value="제출" name="" id="submit" />
+      <!-- submit automatically -->
+    </form>
+  </body>
+</html>
