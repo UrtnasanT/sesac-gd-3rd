@@ -1,0 +1,10 @@
+@import url("./01_import.css");
+/* import 방식을 css 파일에서ㅓ ㄷ다른 css 파일을 불러오는 것 */
+li {
+  color: blueviolet;
+
+/* 기본 룰은 가장 늦게 읽히는 것이 우선으로 적용 */
+@import url("./practice-1.css);
+div {
+color: red;
+margin:20px;

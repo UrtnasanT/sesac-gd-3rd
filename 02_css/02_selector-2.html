@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=ㅂ" />
+    <title>복합 선택자</title>
+    <style>
+      header {
+        height: 70px;
+        background-color: aliceblue;
+      }
+      section {
+        border: 5px solid pink;
+      }
+      article {
+        border: 5px solid gold;
+      }
+      /* 자식 선택자 */
+      header > h1 {
+        color: violet;
+        text-align: center;
+      }
+
+      h1 {
+        background-color: aqua;
+      }
+      .first > h2 {
+        background-color: aqua;
+        color: black;
+      }
+      .second > h2 {
+        background-color: midnightblue;
+        color: white;
+      }
+      /*연소ㅘ적으로ㅗ 길게 나열 가능 -> 선택자다 */
+      main > .first > article > ul > li {
+        font-size: 10px;
+      }
+      li {
+        font-size: 50px;
+      }
+      .second li {
+        font-size: 50px;
+        background-color: tomato;
+        color: white;
+      }
+      /* */
+      main .second > article > ul > li {
+        font-size: 10px;
+      }
+      main .second > article > ul > li {
+        color: blue;
+      }
+      /* 인접 형제 선택자*/
+      #sunAndMoon + li {
+        font-size: 20px;
+        background-color: aqua;
+      }
+      /* 일반 형제 선택자*/
+      #snowWhite ~ li {
+        background-color: bisque;
+      }
+      /* 태그에 해당 id나 class를 가지고 있는 특정 요소만 선택*/
+      li#snowWhite {
+        background-color: springgreen;
+      }
+      section.second {
+        background-color: yellow;
+      }
+      main section.first ul > li > ul > li,
+      .first article span {
+        border: 5px dotted red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>복합 선택자 연습</h1>
+    </header>
+    <main>
+      <section class="first">
+        <h2>첫 번째 section</h2>
+        <article>
+          <span
+            >전래 동화
+            <ul>
+              <li>콩쥐팥쥐</li>
+              <li id="sunAndMoon">햇님 달님</li>
+              <li>흥부와 놀부</li>
+              <li>은혜 갗은 까치</li>
+            </ul>
+          </span>
+        </article>
+      </section>
+      <section class="second">
+        <h2>두 번째 section</h2>
+        <article>
+          <span
+            >외국 동화
+            <ul>
+              <li>
+                신데렐라
+                <ul>
+                  <li>계모</li>
+                  <li>계모</li>
+                  <li>계모</li>
+                </ul>
+              </li>
+              <li>미녀와 야수</li>
+              <li class="snowWhite">백성공주</li>
+              <li>안라딘</li>
+              <li>이상환 나라의 앨리스</li>
+            </ul>
+          </span>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
