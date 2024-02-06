@@ -1,0 +1,27 @@
+body {
+  background-color: #f3f36596;
+  color: black;
+  font-size: small;
+  font-weight: 300;
+}
+h1 {
+  font-size: x-large;
+  font-weight: 380;
+  color: green;
+}
+.sunday {
+  color: red;
+}
+
+.saturday {
+  color: blue;
+}
+.second-week :nth-child(6) {
+  color: red;
+}
+.second-week :last-child {
+  color: red;
+}
+.third-week :nth-child(2) {
+  color: red;
+}
