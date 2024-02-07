@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>속성 선택자</title>
+    <style>
+      /* 속성만 잓성하는 경우 해당 속성이 부여된 모든 요소를 선택 -->
+        <!-- 속성값만 선택하는 갓은 안됨 ["password"] 불가 --> */
+      [disabled] {
+        background-color: red;
+      }
+      [placeholder] {
+        background-color: yellow;
+      }
+      [password] {
+        font-size: 30px;
+      }
+      .square{
+        width 100px;
+        height: 100px;
+        background-color: violet;
+      }
+      [class = "square"]{
+        background-color: aquamarine;
+      }
+      [href="#"] {
+       color: coral;
+      }
+    </style>
+  </head>
+  <!-- 클래스 ㅅ선택자 ㄷ댓신 속성 선택자를 사용해 스타일링 가능
+하지만 번거로움으로 인해 속성 선택자로 class를 선택하는 경우 거의 없음
+- 우선 순위는 동일함 -->
+  <body>
+    <input type="text" placeholder="text1" />
+    <input type="text" placeholder="text2" />
+    <input type="text" placeholder="text3" disabled />
+    <input type="password" placeholder="password" />
+
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <a href="#">a tag</a>
+  </body>
+</html>

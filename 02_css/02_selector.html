@@ -5,8 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS 선택자</title>
     <link rel="stylesheet" href="./02_selector.css" />
+    <style>
+      .content article {
+        height: 500px;
+        border: 5px solid blue;
+      }
+      #detail {
+        background-color: yellow;
+      }
+    </style>
   </head>
   <body>
+    <section>
+      <a href="#detail">상세정보</a>
+      <a href="#review">후기</a>
+      <a href="#community">커뮤니티</a>
+    </section>
+    <section class="content">
+      <article id="detail">상세정보 내용</article>
+      <article id="review">후기 내용</article>
+      <article id="community">커뮤니티 내용</article>
+    </section>
     <div>
       <ul>
         <li class="red">사과</li>
