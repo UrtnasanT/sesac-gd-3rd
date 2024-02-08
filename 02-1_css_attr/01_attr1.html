@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./01-attr1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h2>크기 단위</h2>
+    <div class="px">100px</div>
+    <!-- em - 32px -> 1em dms 32px 됨 -->
+    <div class="em-text">
+      <!-- em 32px-> 64 됨 -->
+      <div class="em-text">
+        em
+        <!--64-> 128px 됨 -->
+        <div class="em-text">em</div>
+      </div>
+    </div>
+    <div class="rem-text">
+      rem
+      <div class="rem-text">
+        rem
+        <div class="rem-text">rem</div>
+      </div>
+    </div>
+    <div class="em">10em</div>
+    <div class="em-parents">
+      em 부모 요소 font-size: 10px
+      <div class="em">10em</div>
+    </div>
+
+    <div class="rem">10rem</div>
+    <div class="rem-parents">
+      rem 부모 요소 font-size: 30px
+      <div class="rem">10rem</div>
+    </div>
+    <!-- percent 여소 -->
+    <div class="percent-parents">
+      % 부모 요소
+      <div class="percent">50%</div>
+    </div>
+    <div class="vh">30vh</div>
+    <div class="vw">30vw</div>
+
+    <br />
+    <br />
+
+    <h2>display 속성</h2>
+    <div class="d-block">block 1</div>
+    <div class="d-block">block 2</div>
+    <div class="d-block">block 3</div>
+    <div class="d-block">block 4</div>
+    <br /><br />
+    <span class="d-inline">inline 요소 1</span>
+    <span class="d-inline">inline 요소 2</span>
+    <span class="d-inline">inline 요소 3</span>
+    <span class="d-inline">inline 요소 4</span>
+    <br /><br />
+
+    <span class="inline-block">inline-block 요소 1</span>
+    <span class="inline-block">inline-block 요소 2</span>
+    <span class="inline-block">inline-block 요소 3</span>
+    <span class="inline-block">inline-block 요소 4</span>
+  
+  <br /><br />
+  <h3>박스 모델 사용하기 실습</h3>
+  <div class="container">
+    <div class="html">html</div>
+    <div class="css">css</div>
+    <div class="js">javascript</div>
+  </div>
+
+  <br />
+  <h2>max-width min-width</h2>
+  <div class="parent">max-width</div>
+  <div class="min"></div>
+<div class="max"></div>
+    max-width
+  </div>
+
+  <br>
+<!-- span 안에 div 쓰면 깨집니다 -->
+  <span style="border: 5px solid black;">span
+    <div style="background-color: grey;">div</div>
+</span>
+<br>
+<div class="cal">cal</div>
+
+<br><br>
+
+<div class="content-box">box-sizing content-box</div>
+<div class="border-box"> box-sizing border-box</div>
+</body>
+</html>

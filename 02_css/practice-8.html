@@ -9,18 +9,39 @@
         width: 400px;
         height: 900px;
       }
-      .text-box{
+      .text-box {
         align: center;
-        border:1cm;
+        border: 1cm;
       }
       /* hover */
-
+      h3:hover {
+        background-color: yellow;
+        color: blue;
+        height: 30px;
+        width: 210px;
+      }
       /* focus */
+      #textarea:focus {
+        background-color: pink;
+        border-color: black;
+      }
       textarea {
         width: 100%;
       }
       /* checked */
-
+      #red:checked + label {
+        background-color: red;
+      }
+      #yellow:checked + label {
+        background-color: yellow;
+      }
+      #blue:checked + label {
+        background-color: lightskyblue;
+      }
+      .submit-button:active {
+        background-color: cadetblue;
+        color: black;
+      }
       /* active */
       button {
         float: right;
@@ -34,23 +55,28 @@
     </style>
   </head>
   <body>
-    <header><h3>건의 사항을 적어주세요!</h3></header>
-   
+    <header>
+      <h3>건의 사항을 적어주세요!</h3>
+    </header>
+
     <form>
-      <div class="text-box">
-      <input placeholder="건의 사항"></input>
-    <!-- label - 명시적 방식: id와 for 맞추기 */ -->
-      <!-- - 암시적 방식: label 내부에 input 작성 - checkbox 사용 시 명시적 방식으로 작성 -->
+      <div class="textarea">
+        <textarea
+          id="textarea"
+          cols="55"
+          rows="10"
+          placeholder=" 건의 사항 🎈"
+        ></textarea>
+
+        <!-- label - 명시적 방식: id와 for 맞추기 */ -->
+        <!-- - 암시적 방식: label 내부에 input 작성 - checkbox 사용 시 명시적 방식으로 작성 -->
       </div>
       <div class="checkboxes">
-      <input type="checkbox" id="red">빨강</input>
-      <input type="checkbox" id="blue">파랑</input>
-      <input type="checkbox" id="yellow">노랑</input>
-    </div>
-    <div class="submit-button">
-      <button>제출</button>
-    </div>
+        <input type="checkbox" id="red" /><label for="red">빨강</label>
+        <input type="checkbox" id="blue" /><label for="blue">파랑</label>
+        <input type="checkbox" id="yellow" /><label for="yellow">노랑</label>
+      </div>
+      <button class="submit-button">제출</button>
     </form>
-   
   </body>
 </html>

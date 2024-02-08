@@ -25,3 +25,6 @@ h1 {
 .third-week :nth-child(2) {
   color: red;
 }
+.third-week :nth-child(2)::after {
+  content: "선날";
+}

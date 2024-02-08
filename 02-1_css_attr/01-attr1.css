@@ -1,0 +1,149 @@
+.px {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+/* em: 보무 요소의 fontt-size가 기준 -> ㅅ사용 ㅅ시 주의 필요 */
+.em-text {
+  /* 보무 요소의 font-size를 받아오기 때문에 점점 커짐 */
+  font-size: 2em;
+}
+
+/* rem: root(html) 의 font-size가 기준 -> 중첩도ㅚ어도 영향 x */
+/* rem의 fz를 지정하지 않으면 기본적으로 1rem = 16px */
+.rem-text {
+  font-size: 2rem;
+}
+
+.em {
+  width: 10em;
+  height: 10em;
+  background-color: aliceblue;
+}
+.em-parents {
+  font-size: 10px;
+  background-color: violet;
+}
+
+.rem {
+  width: 10rem;
+  height: 10rem;
+  background-color: lightseagreen;
+}
+
+.rem-parents {
+  width: 30px;
+  background-color: lightgoldenrodyellow;
+}
+/* 50% 는 부모 요소 지정함 */
+/* 자동으로  */
+.percent {
+  width: 50%;
+  background-color: palevioletred;
+}
+/* body의 70% */
+.percent-parents {
+  width: 70%;
+  background-color: aquamarine;
+}
+
+.vh {
+  width: 30vh;
+  height: 30vh;
+  background-color: chocolate;
+}
+
+.vw {
+  width: 30vw;
+  height: 30vw;
+  background-color: thistle;
+}
+.d-block {
+  background-color: antiquewhite;
+  border: 1px solid yellow;
+}
+.d-inline {
+  /* display: inline -> span 요소의 default 속성값 */
+  background-color: lightgray;
+  border: 1px solid darkblue;
+  width: 100px;
+  height: 100px;
+}
+.d-span {
+  background-color: lightgray;
+  border: 1px solid darkblue;
+}
+.inline-block {
+  width: 200px;
+  height: 200px;
+  /* inline 요소처럼 content 크기에 딱 맞도록 기분 크기 자동 지정
+  inline 요소  */
+  display: inline-block;
+  border: 1px solid salmon;
+  font-size: 30px;
+}
+
+.container {
+  weight: auto;
+  height: 200px;
+  background-color: orange;
+}
+.container * {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+}
+.html {
+  background-color: skyblue;
+}
+.css {
+  background-color: green;
+}
+.js {
+  background-color: red;
+}
+.parent {
+  width: 400px;
+  height: 200px;
+  background-color: pink;
+}
+
+.min {
+    /* 최소 넓이이므로 400px 보다 늘어늘 수 있지만 줄어들 수 없음 */
+    min-width:400px 
+    width: 400px;
+    height: 100px;
+    background-color :purple;
+}
+.max {
+    /* 최대 넓이 400px 보다 줄어들 수 있지만 늘어날 수 없음 */
+    min-width:400px 
+    width: 400px;
+    height: 100px;
+    background-color :lightgreen;
+}
+
+/* height ㄷ도 마찬가지 */
+/* 하지만 max-width와 min-width, max-height와 min-height는 주로 반응형을 위한 웹 페이지에서 사용되기 대문에 width 기반으로 많이 씀 */
+
+.cal{
+    width: 100vw - 300px;
+    background-color: yellow;
+}
+
+/* box sizing 숙성 */
+/* 요소의 크기 계산 기준을 지정하는 속성 */
+.content-box  {
+    width: 100px
+    height: 100px;
+    padding: 20px;
+    border: 15px solid red;
+    background-color:orange;
+}
+.content-box {
+    box-sizing: content-box;
+}
+
+.border-box {
+    box-sizing: content-box;
+}
