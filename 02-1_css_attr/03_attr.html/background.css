@@ -1,0 +1,83 @@
+.box {
+  display: inline-block;
+  width: 40px;
+  height: 50px;
+  border: 1px solid black;
+}
+.background {
+  /* background-color background 만 작성해도 스타일을 지정할 수 있음 */
+  /* 단축숙성 순서
+  - color
+  - image
+  - repeat
+  - position/size */
+  background-color: aqua;
+  background: palevioletred;
+  /* 그러디에션 
+  default: top to bottom 50% */
+  background: linear-gradient(to right, gold, yellowgreen);
+  /* 색상 앞에 to bottom, to left, deg 입력 시 해당 방향으로 */
+  /* 해당 뒤에 한 간 공백 후 % 입력 시 해당 샋상의 자지 비율 지정 */
+  background: linear-gradient(to right, gold, 20%, yellowgreen);
+}
+.background-image {
+  background-image: url("/02-1_css_attr/img/small_img.png");
+  background-position: center;
+  background-size: auto;
+  background-size: 50px;
+  /* 가로 세로를 직접 입력 시 이미지 모양의 깨질 수 있음 */
+  background-size: 100px 70px;
+  /* contain: 배경 사이즈의 작은 축에 맞춰ㅓ 이미지 크기 지정 */
+  background-size: contain;
+  /* cover:  배경 사이즈의 */
+  background-size: cover;
+
+  /* 잘릴 부분을 overflow 속성 사용해 보여줄 수 없음 */
+  overflow: scroll;
+  /* background attachment 
+  defaultt: scroll*/
+  background-attachment: scroll;
+  /* background attachment 가 fixed일 때 기준은 viewport입니다 */
+  background-attachment: fixed;
+  background-position: center;
+  background-attachment: 100px;
+}
+
+.prac-1 {
+  width: 800px;
+  height: 500px;
+  background-position: center;
+  background-repeat: repeat-x;
+  background-color: skyblue;
+  margin-bottom: 10px;
+  background-image: url(https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a);
+}
+.prac-2 {
+  width: 800px;
+  height: 500px;
+  background-position: 100px 30px;
+  background-color: skyblue;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a);
+}
+
+.prac-3 {
+  width: 800px;
+  height: 500px;
+  background-position: -100px;
+  background-color: skyblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a);
+}
+
+#form {
+  width: 80px;
+  height: 40px;
+  background-image: url(/02-1_css_attr/img/search-icon.png);
+  background-position: -100px;
+  border: 10px;
+  background-size: cover;
+  background-color: rgb(218, 214, 214);
+}

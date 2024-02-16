@@ -1,0 +1,36 @@
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: palegoldenrod;
+  position: relative;
+}
+/* Item 1 은 자기 자신을 기준으로 왼쪽 50px, 위쪽 30px 에 위치 */
+.item1 {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: relative;
+  left: 50px;
+  top: 30px;
+}
+
+/* Item 2 는 컨테이너를 기준으로 오른쪽 30px, 아래쪽 100px 에 위치 */
+.item2 {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  right: 30px;
+  bottom: 100px;
+  background-color: orange;
+}
+
+/* Item 3 는 뷰포트를 기준으로 오른쪽 100px, 위 100px 에 위치 시키기 */
+.item3 {
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 100px;
+  top: 100px;
+}

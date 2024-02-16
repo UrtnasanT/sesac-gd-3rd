@@ -1,0 +1,24 @@
+.search-container {
+  display: flex;
+  align-items: center;
+
+  .search-input {
+    padding: 0 10px 0 55px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    border-color: none;
+    width: 100px;
+    height: 40px;
+    background-image: url("/02-1_css_attr/img/search-icon.png");
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+    background-size: 20px;
+  }
+  .search-input:focus {
+    outline: none;
+    /* focys 시 자동으로  */
+  }
+  .search-input:hover:not(input:focus) {
+    background-color: #b0b0b0;
+  }
+}

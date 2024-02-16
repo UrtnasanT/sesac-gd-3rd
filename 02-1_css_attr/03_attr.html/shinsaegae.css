@@ -1,0 +1,68 @@
+.product-info {
+  width: 1000px;
+  height: 200px;
+  position: relative;
+}
+
+body {
+  width: 2000px;
+  height: 3000px;
+  margin: 0;
+}
+
+.product-info-detail {
+  height: 1000px;
+  background-color: bisque;
+}
+
+.fixed-tab {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  text-align: justify;
+  font-size: 16px;
+  background-color: pink;
+}
+
+.fixed-tab ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fixed-tab ul li {
+  display: inline-block;
+}
+
+.fixed-tab ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.fixed-tab ul li a:hover {
+  background-color: #f0f0f0;
+}
+
+.top-btn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+  border: none;
+  color: black;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.top-btn:active {
+  background-color: white;
+}

@@ -6,14 +6,56 @@
     <title>테두리 그리기</title>
     <style>
       .width {
-        border-width: 20, 30, 40, 50;
+        /* 2px width solid black border */
+        border-top: 3px solid orange;
+        border-right: 1px solid orange;
+        border-left: 2px solid orange;
+        border-bottom: 20px solid orange;
+        padding: 10px; /* Add padding for spacing */
+        border-top-left-radius: 5%;
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 15%;
+        border-bottom-left-radius: 20%;
+      }
+      .style {
+        border-top: 5px dotted skyblue;
+        border-right: 5px ridge skyblue;
+        border-bottom: 20px dashed skyblue;
+        border-left: 5px groove skyblue;
+        border-top-left-radius: 25%;
+        border-top-right-radius: 30%;
+        border-bottom-right-radius: 35%;
+        border-bottom-left-radius: 40%;
+      }
+      .color {
+        border-top: 5px inset palevioletred;
+        border-right: 5px inset green;
+        border-bottom: 20px inset violet;
+        border-left: 5px outset red;
+        border-radius: 45%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 55%;
+        border-bottom-right-radius: 60%;
+        border-bottom-left-radius: 65%;
+      }
+
+      .direction {
+        border-top: 10px double crimson;
+        border-right: 10px dotted aqua;
+        border-bottom: 10px ridge purple;
+        border-left: 10px dashed olivedrab;
+        border-radius: 5%;
+        border-top-left-radius: 20%;
+        border-top-right-radius: 30%;
+        border-bottom-right-radius: 40%;
+        border-bottom-left-radius: 50%;
       }
     </style>
   </head>
   <body>
     <h3>테두리 두깨</h3>
-    <div class="width">Border-width</div>
-    <div class="style">Border-style</div>
+    <div type="box" class="width">Border-width</div>
+    <div type="box" class="style">Border-style</div>
     <div class="color">Border-color</div>
     <div class="direction">Border 방향</div>
   </body>
