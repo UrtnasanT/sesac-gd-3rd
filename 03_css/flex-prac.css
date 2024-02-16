@@ -1,0 +1,50 @@
+.container {
+  /* display: flex 자식 요소의 정렬 방버ㅓㅂ을 지정하는 속성
+    display: inlin-flex 속성도 있음
+    차이:  */
+  display: flex;
+  background-color: antiquewhite;
+  width: 400px;
+  height: 400px;
+  flex-direction: row;
+  /* flex-direction: row(default  */
+  /* row reverse*/
+  /* flex-direction: row-reverse; */
+
+  /* flex-direction: column-reverse; */
+  /* flex-wrap: wrap (default); */
+  /* flex 속성 사용 시 컨테이너ㅓ의 줄바꿈을 지정 */
+  flex-wrap: wrap;
+}
+.item {
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+}
+.item1 {
+  background-color: red;
+}
+.item2 {
+  background-color: pink;
+}
+.item3 {
+  background-color: yellowgreen;
+}
+.item4 {
+  background-color: blue;
+}
+.item5 {
+  background-color: mediumaquamarine;
+}
+.item6 {
+  background-color: yellow;
+}
+
+.item7 {
+  background-color: pink;
+}
+.item8 {
+  background-color: green;
+}
