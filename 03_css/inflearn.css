@@ -1,0 +1,93 @@
+body {
+  margin: 0px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo a {
+  display: block;
+  text-decoration: none;
+  color: rgb(67, 137, 67);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background-color: aliceblue;
+  padding: 20px;
+  text-align: center;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-left {
+  display: flex;
+  align-items: center; /* Align menu items vertically */
+  justify-content: space-between;
+}
+.menu-left .menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-right {
+  display: flex;
+  width: 20%;
+  align-items: center; /* Align menu items vertically */
+  justify-content: space-between;
+}
+
+.menu a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.menu li {
+  list-style-type: none;
+  justify-content: center;
+}
+
+.menu a:hover {
+  color: #46bc60;
+  border-radius: 5px;
+}
+.header__search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #333;
+  padding: 2px;
+}
+.header__search > input {
+  border: none;
+  outline: none;
+}
+.fa-solid fa-magnifying-glass i {
+  position: relative;
+  color: #b0b0b0;
+}
+
+.search-input:focus {
+  outline: none;
+  /* focus 시 자동으로  */
+}
+.search-input:hover:not(input:focus) {
+  background-color: #b0b0b0;
+}
+
+.btn {
+  border: 1px solid black;
+  padding: 4px;
+  margin: 2px;
+  border-radius: 10%;
+}
+.btn--white {
+  color: gray;
+}
+
+.btn--red {
+  background-color: rgb(248, 113, 113);
+  color: white;
+}
