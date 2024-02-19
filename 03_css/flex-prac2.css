@@ -2,9 +2,13 @@ css * {
   font-size: 20px;
   font-weight: 700;
 }
+h1 {
+  font-size: 20px;
+}
 body {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 10px;
+  font-weight: 700;
 }
 ul {
   margin: 0;
@@ -25,17 +29,58 @@ header {
   display: flex;
 } /* TODO: header1
 ~ 3까지 완성해주세요! */ /* header1 */ /* header2 */
-.header2 {
+ul.menus {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
-.menus {
-  flex-wrap: wrap;
 
-  /* height
+.header1 ul {
+  width: 20%;
+}
+.header2 ul {
+  width: 100%;
+}
+
+.header3 ul {
+  width: 20%;
+}
+
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.header ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+}
+.header3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+.header ul {
+  display: flex;
+}
+
+.header ul li {
+  padding: 0 10px;
+}
+
+/* height
 100%를 주는 이유 >> ul의 높이는 콘텐츠의 크기만큼 할당되어 있기 때문에 처음의
 height는 li 와 ul가 같습니다. 하지만 li들은 .header2 기준으로 세로 중앙정렬을
 해야하기 때문에 ul.menus는 .header2의 높이를 그대로 가져와서 li의 기준이 되어야
 합니다. border:1px solid black; 으로 ul.menus가 어느정도를 차지하는지 확인해보고
 height:100%가 있을 때와 없을 때를 비교해보세요! */
-  height: 100%;
-} /* header3 */

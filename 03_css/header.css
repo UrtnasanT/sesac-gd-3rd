@@ -1,0 +1,21 @@
+* {
+  /* 태그에 기본적으로 적용되어 있는 margin,padding 없애기 */
+  /* border-box 안주면 검색창 이상해짐 */
+  box-sizing: border-box;
+}
+
+header {
+  box-shadow: 1px 0 10px rgba(135, 135, 135, 0.461);
+}
+
+header .inner .menu-right .header__search i {
+  /* 돋보기 input 안으로 이동시키기*/
+  /* 축으로 이동시킴 */
+  transform: translateY(-50%);
+}
+
+/* btn */
+
+.btn {
+  cursor: pointer;
+}

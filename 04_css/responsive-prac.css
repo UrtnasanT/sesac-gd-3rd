@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  background-color: green;
+}
+
+@media screen and (max-width: 300px) {
+  body {
+    background-color: orange;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-color: skyblue;
+  }
+}
+
+@media screen and (max-height: 300px) {
+  p {
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+@media screen and (min-height: 500px) {
+  p {
+    background-color: green;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: skyblue;
+  margin: 20px;
+}
+@media screen and (min-width: 700px) {
+  .container {
+    flex-direction: row;
+  }
+}
+.box {
+  background-color: black;
+}

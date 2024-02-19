@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.media {
+  background-color: pink;
+}
+
+/* 화면에 너비가 최대 800px일 때 적응 -> 800px보다 좁을ㄷㄸ대 적응 됨 */
+@media screen and (max-width: 800px) {
+  .media {
+    background-color: gold;
+  }
+}
+/* 화면에 너비가 최소 1200px일 때 적응 -> 1200보다 넓을때 적응 됨 */
+@media screen and(min-width: 1200px) {
+  .media {
+    background-color: skyblue;
+  }
+}
+
+.header-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .header-mobile {
+    display: block;
+  }
+}
+
+.header-normal {
+  display: none;
+}
+
+.img-container {
+  width: 20vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container img {
+  width: 80px;
+}

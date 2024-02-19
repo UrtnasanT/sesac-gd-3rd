@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* * {
+    border: 1px solid black
+} */
+
+.bounce-ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, yellow, orange, 70%, orangered);
+  box-shadow: -5px 5px 10px inset rgb(51, 51, 51, 0.5);
+  position: relative;
+
+  /* 참고 배경색 gradiattion */
+  animation-name: ball;
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+
+  animation: ball 10s ease-out infinite;
+}
+@keyframes ball {
+  0% {
+    transform: translate(0px);
+  }
+  25% {
+    transform: translate(calc(100vw - 100px), 0px);
+  }
+  50% {
+    transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+  }
+  75% {
+    transform: translate(0px, calc(100vh - 100px));
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+  to {
+    margin-left: 0;
+    width: 100%;
+  }
+}

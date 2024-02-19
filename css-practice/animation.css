@@ -1,0 +1,93 @@
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: palevioletred;
+  position: relative;
+
+  /* Animation 사용 */
+  /* name: nasan-ani */
+  animation-name: nasan-ani;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+}
+@keyframes nasan-ani {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 200px;
+  }
+  50% {
+    left: 400px;
+  }
+
+  75% {
+    left: 200px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+.bounce-ball {
+  height: 100px;
+  width: 100px;
+  background-color: lightblue;
+  position: relative;
+  left: 100px;
+  border-radius: 50%;
+
+  /* animation-name: bounce-1;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate
+} */
+  animation: bounce1 1s ease-in infinite alternate;
+}
+@keyframes bounce1 {
+  to {
+    top: 0px;
+  }
+  from {
+    bottom: 0px;
+    width: 60px;
+  }
+  50% {
+    bottom: 200px;
+    /* width: 300px; */
+  }
+}
+
+.bounce-ball2 {
+  width: 50px;
+  height: 50px;
+  background-color: lightcoral;
+  position: relative;
+  border-radius: 50%;
+
+  animation-name: bounce2;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+
+  animation: bounce2 2s infinite;
+}
+
+@keyframes bounce2 {
+  from,
+  to {
+    bottom: 0;
+    animation-timing-function: ease-out;
+    width: 60px;
+  }
+  50% {
+    width: 100px;
+    bottom: 300px;
+    animation-timing-function: ease-in;
+    /* 300px에서 천천히 시작해, 0px에 가명서 정상 속도로 끝남 */
+  }
+}

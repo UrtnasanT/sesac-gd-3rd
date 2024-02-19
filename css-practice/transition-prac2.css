@@ -1,0 +1,35 @@
+.container {
+  height: 600px;
+  width: 100vw;
+  background-color: aliceblue;
+}
+h2 {
+  color: green;
+  text-align: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  border: solid black 1px;
+  transition: 1s;
+}
+
+.box1:hover {
+  width: 200px;
+}
+.box2:hover {
+  transform: skewX(-45deg) translateX(50%);
+}
+
+.box3:hover {
+  border-radius: 50%;
+  background-color: red;
+  transform: translateX(300px) rotate(180deg);
+}
+
+.box4:hover {
+  background-color: yellow;
+  transform: rotateY(360deg) scale(2) perspective(200px) translateY(25px);
+}

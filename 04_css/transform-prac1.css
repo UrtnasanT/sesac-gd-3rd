@@ -1,0 +1,86 @@
+h1 {
+  color: green;
+  text-align: center;
+}
+img{
+    height: 200px;
+    width: 400px;
+    align-items: center;
+}
+.container {
+    width:100vw;
+    height: 600px;
+    background-color: lightgray;
+    position: relative;
+}
+.beach:hover{
+  position: absolute;
+}
+
+.beach {
+    position: absolute;
+    transform: skewY(35deg);
+    transition:1s;
+}
+.beach1{
+    top: 180px;
+    left: 200px;
+    z-index:3;
+
+}
+.beach2{
+    top: 150px;
+    left: 350px;
+    z-index: 2;
+    transform: skewY(35deg);
+    transition:1s;
+}
+.beach3{
+    top: 120px;
+    left: 500px;
+    z-index: 1;
+    
+}
+/* .img {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+  보무 너비가 400px이므로 400px이 됨
+  height: 100%;
+  cursor: pointer; */
+
+.image-box:hover {
+  /* transform: skewX(30deg); */
+  transform: skewY(45deg);
+  /* transform: skew(30deg, 30deg); */
+  /* scale */
+  /* transform: scale(2);*/
+  transform: scale(2);
+  /* transform: scale(0.5, 2); 
+    
+    /* translate x: x축을 기준으로 이동*/
+  /* transform: translateX(100px); */
+  /* transform: translateX(-100px); */
+  /* Z축 변화는 perspective 속성을 사용하지 않을 경우 확인 불가 */
+  transform: perspective(500px) translateZ(100px);
+
+  /* 2개일 때 단축 속성 */
+  /* transform: translate(100px, 100px); */
+  /* 3개일 때 translate3d()호 작성해야 함 */
+  transform: perspective(500) translate3d(100px, 100px, 100px);
+
+  /* 
+  4. rotate
+  p 회전
+  주어ㅓ진 가도만큼 회전
+  - rotatex()
+  - rotatey()
+  -rottat(): 시졔 방향으로 회전*/
+  /* transform: rotate(45deg); */
+  transform: perspective(500px) rotateX(45deg);
+  transform: perspective(500px) rotateY(45deg);
+  /* 뒤면 보여주는 */
+  transform: perspective(500px) rotateX(180deg);
+  backface-visibility: hidden; default
+}
