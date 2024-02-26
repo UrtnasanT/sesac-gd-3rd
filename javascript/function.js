@@ -54,6 +54,9 @@ console.log(sum(10, 20));
 const result = sum(5, 7);
 console.log(result);
 
+// 함수
+// - 특정 작업을 수행하기 위해 독립적으로 설계된 코드 집합
+
 function sayHello(name) {
   name = prompt(`이름은 뭐에요?`);
   alert(`안녕하세요, ${name}님`);
