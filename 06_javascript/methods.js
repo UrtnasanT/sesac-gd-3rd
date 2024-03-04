@@ -183,7 +183,8 @@ let findResult = words.find(function (ani) {
 console.log(findResult);
 
 //map(): 배열 내의 모든 원소에 대해 호출한 함수의 결과를 모아 새로운 배열 반환
-
+//arrMap(function(value[,index[, arrr]]){})
+//배열의 모든 원소를 for문으ㅡ로 돌려서 버꿀 수 있지만 더 단단드를 ㅅ사용해 변ㅅ셩
 let nums = [1, 2, 3, 4, 5];
 let mapArr = nums.map(function (n) {
   return n * 100;
