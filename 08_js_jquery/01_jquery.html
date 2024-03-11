@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <!-- jquer CDN -->
+    <!-- uncompressed, minified: 일반 패키지 -->
+    <!-- uncompressed: 압축되어있지 않고 공백과 들었쓰기가 되어있는 형태
+    - slim, slim minified; slim 패키지 (일반 패키지에서 해당 버전에 불필요하다고 ) -->
+    <script defer src="./01_jquery.js"></script>
+    <script  src="<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>"></script>
+    <style>
+      .container{
+        width: 100vw;
+        height: 400px;
+        background-color: antiquewhite;
+        display: flex;
+        flex: wrap;
+      }
+      .box{
+        width: 100px;
+        height: 100px;
+      }
+      .red{
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="testSelector">jquery 선택자</div>
+    <input type="text">
+    <button onclick="useVal()"> val() 사용하기</button>
+    <button onclick="useAttr()"> attr() 사용하기</button>
+    <br>
+    <br>
+    <span id ="span">hello
+<p>world!</p>
+    </span>
+    <button onclick="useText()"> text () 사용하기</button>
+    <button onclick="useAttr()"> html() 사용하기</button>
+    <button onclick="useAttr()"> css() 사용하기</button>
+
+    <!--  -->
+    <div class="container">
+      <div class="box red"></div>
+      <div class="box red"></div>
+      <div class="box red"></div>
+    </div>
+  </body>
+</html>

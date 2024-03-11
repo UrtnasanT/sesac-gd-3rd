@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <script></script>
+    <!-- jquery CDN -->
+    <!-- 
+      https://releases.jquery.com/ 
+      - uncompressed, minified : 일반 패키지
+        - uncompressed : 압축되어있지 않고 공백과 들여쓰기가 되어있는 형태
+        - minified : 압축되어있는 형태로, 한 줄로 와다다 쓰여있는 형태 ( 용량이 더 작음 )
+      - slim, slim minified : slim 패키지 ( 일반 패키지에서 해당 버전에 불필요하다고 판단되는 몇 기능들이 제거된 형태)
+     -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./03_jquery.js"></script>
+    <style>
+      body {
+        height: 1000px;
+      }
+      .container {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <div class="container"></div>
+    <input type="password" />
+    <div class="password">pw</div>
+  </body>
+</html>

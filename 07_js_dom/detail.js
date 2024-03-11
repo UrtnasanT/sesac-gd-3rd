@@ -18,4 +18,6 @@ const productID = urlParam.get("id");
  const productDetail = document.querySelector('#product-detail');
 
  productDetail.innerHTML = `<img src="${product.image} alt ="${product.name}"`/>
- 
+if(product){
+    productDetail
+} 
